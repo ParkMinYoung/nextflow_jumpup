@@ -331,3 +331,55 @@ git push -u origin master
 # solved : https://synuns.tistory.com/2
 
 
+# execute time : 2024-04-16 09:22:50 : 
+git add .
+
+
+# execute time : 2024-04-16 09:23:12 : 
+git commit -m "all commit"
+
+
+# execute time : 2024-04-16 09:23:21 : upload
+git push -u origin master
+
+
+# execute time : 2024-04-16 09:34:56 : 
+ 
+
+
+# execute time : 2024-04-16 09:49:33 : 
+nextflow run lower_file_size_docker_images_save.nf -resume --size 300 --tag_name AAA --outdir "results" --docker_list custom_docker_list
+
+
+# execute time : 2024-04-16 09:51:32 : 
+git add . 
+
+
+# execute time : 2024-04-16 09:51:58 : 
+git commit -m "docker image backup"
+
+
+# execute time : 2024-04-16 09:52:20 : 
+git push -u origin master 
+
+
+# execute time : 2024-04-16 10:02:38 : 
+git reset HEAD^
+
+
+# execute time : 2024-04-16 10:02:46 : 
+git reflog
+
+
+# execute time : 2024-04-16 10:03:33 : 
+git reset HEAD@{4} 
+
+
+# execute time : 2024-04-16 10:04:14 : 
+git commit -m "return to all"
+
+
+# execute time : 2024-04-16 10:05:20 : 
+git push origin master
+
+
