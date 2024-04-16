@@ -1,0 +1,333 @@
+# execute time : 2023-03-21 15:37:58 : version
+nextflow info 
+
+
+# execute time : 2023-03-21 15:40:57 : if i want to use a specific version of NF
+export NXF_VER=22.04.5
+
+
+# execute time : 2023-03-21 15:41:27 : check version
+nextflow -version
+
+
+# execute time : 2023-04-26 14:18:26 : 
+nextflow run min.nf 
+
+
+# execute time : 2023-04-26 16:18:44 : 
+nextflow run min.nf -resume 
+
+
+# execute time : 2023-04-26 16:42:02 : 
+
+nextflow run script1.nf 
+
+
+# execute time : 2023-04-26 16:56:20 : 
+nextflow run script1.nf -with-docker 
+
+
+# execute time : 2023-04-26 17:02:07 :run 
+nextflow run script1.nf -resume
+
+
+# execute time : 2023-04-26 17:12:42 : 
+nextflow run script3.nf -resume 
+
+
+# execute time : 2023-04-26 17:31:08 : 
+nextflow run script4.nf -resume 
+
+
+# execute time : 2023-04-26 17:32:50 : 
+nextflow run script4.nf -resume --reads 'data/ggal/*_{1,2}.fq'
+
+
+# execute time : 2023-04-27 14:28:09 : 
+nextflow run env.nf 
+
+
+# execute time : 2023-04-27 14:28:31 : 
+nextflow run stdout.nf 
+
+
+# execute time : 2023-04-27 14:38:06 : 
+nextflow run script4.nf -resume 
+
+
+# execute time : 2023-04-27 14:43:29 : 
+nextflow run script4.nf -resume  --reads 'data/ggal/*_{1,2}.fq' 
+
+
+# execute time : 2023-04-27 14:48:12 : 
+nextflow run script5.nf -resume 
+
+
+# execute time : 2023-04-27 14:53:47 : 
+git clone https://github.com/nextflow-io/patterns.git
+
+
+# execute time : 2023-04-27 15:12:13 : 
+nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq' -N minmin@dnalink.com -with-report -with-trace -with-timeline -with-dag dag.png 
+
+
+# execute time : 2023-04-27 16:21:05 : 
+nextflow run run_rnaseq.nf -resume 
+
+
+# execute time : 2023-04-27 16:25:30 : 
+nextflow run run_rnaseq.nf -resume 
+
+
+# execute time : 2023-04-27 16:41:15 : 
+nextflow run run_rnaseq.nf -resume --reads 'data/ggal/*_{1,2}.fa' -N minmin@dnalink.com 
+
+
+# execute time : 2023-04-27 16:41:29 : 
+nextflow run run_rnaseq.nf -resume --reads 'data/ggal/*_{1,2}.fq' -N minmin@dnalink.com 
+
+
+# execute time : 2023-04-27 16:48:51 : 
+e 87 
+
+
+# execute time : 2023-04-28 15:48:20 : 
+alias a1="nextflow run channel.nf -resume"
+
+
+# execute time : 2023-04-28 16:38:04 : 
+alias a2='nextflow run channel.csv.nf -resume'
+
+
+# execute time : 2023-05-08 17:46:18 : 
+nextflow run process.example.nf -resume 
+
+
+# execute time : 2023-05-08 17:49:19 : 
+nextflow run process.shebang.nf -resume
+
+
+# execute time : 2023-05-08 17:53:59 : 
+nextflow run process.parameters.nf -resume
+
+
+# execute time : 2023-05-08 18:01:52 : 
+nextflow run process.parameters.single_quote.nf -resume
+
+
+# execute time : 2023-05-15 16:13:00 : 
+nextflow run process.conditional.nf --compress gzip -resume 
+
+
+# execute time : 2023-05-15 16:22:52 : run val example
+nextflow run process.input_value.nf -resume 
+
+
+# execute time : 2023-05-15 16:48:16 : 
+nextflow run process.input_files.quiz.nf -resume 
+
+
+# execute time : 2023-05-15 17:03:06 : 
+nextflow run process.combine.input_channel.nf -resume
+
+
+# execute time : 2023-06-14 13:11:28 : 
+nextflow run process.composite_input_output.nf -resume 
+
+
+# execute time : 2023-06-14 13:39:39 : 
+nextflow run process.publishdir.nf -resume
+
+
+# execute time : 2023-06-14 13:39:51 : 
+fg
+
+
+# execute time : 2023-06-14 16:01:59 : 
+nextflow run process.publishdir.subdir.nf -resume 
+
+
+# execute time : 2023-06-28 16:09:33 : 
+nextflow run groovy.basic.nf -resume
+
+
+# execute time : 2023-07-07 15:52:17 : 
+nextflow run groovy.functions.nf -resume
+
+
+# execute time : 2023-07-07 16:15:19 : 
+nextflow run groovy.closures.nf -resume
+
+
+# execute time : 2023-07-07 16:16:00 : 
+fg
+
+
+# execute time : 2023-07-07 16:42:08 : 
+nextflow run groovy.modularization.multiple.nf -resume
+
+
+# execute time : 2024-04-12 11:29:10 : 
+nextflow run lower_file_size_docker_images_save.nf 
+
+
+# execute time : 2024-04-12 11:35:03 : 
+mv nextflow.config nextflow.config.docker.on
+
+
+# execute time : 2024-04-12 14:46:13 : 
+nextflow run lower_file_size_docker_images_save.nf -resume --size 5000
+
+
+# execute time : 2024-04-12 15:00:28 : 
+nextflow run lower_file_size_docker_images_save.nf -resume --size 5000 --tag_name AAA --outdir "results"
+
+
+# execute time : 2024-04-12 15:19:38 : 
+nextflow run lower_file_size_docker_images_save.nf -resume --size 5000 --tag_name AAA --outdir "results" --docker_list custom_docker_list 
+
+
+# execute time : 2024-04-12 16:42:58 : 
+nextflow run lower_file_size_docker_images_save.nf -resume --size 5000 --tag_name AAA --outdir "results" --docker_list custom_docker_list
+
+
+# execute time : 2024-04-12 16:58:49 : 
+nextflow run lower_file_size_docker_images_save.nf -resume --size 200 --tag_name AAA --outdir "results" --docker_list custom_docker_list
+
+
+# execute time : 2024-04-15 15:42:03 : git init
+git init
+
+
+# execute time : 2024-04-15 15:46:09 : 
+git remote add nf_jumpup https://github.com/ParkMinYoung/nextflow_jumpup 
+
+
+# execute time : 2024-04-15 15:46:46 : 
+git remote add nf_jumpup https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-15 15:47:20 : 
+git remote add nextflow_jumpup https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-15 15:51:27 : 
+git remote remove nf_jumpup
+
+
+# execute time : 2024-04-15 15:51:45 : 
+git remote remove nextflow_jumpup 
+
+
+# execute time : 2024-04-15 15:51:51 : nothing
+git remote --verbose
+
+
+# execute time : 2024-04-15 15:52:36 : connect
+git remote add nf_jumpup https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-15 15:52:51 : connected
+git remote --verbose
+
+
+# execute time : 2024-04-15 15:55:43 : 
+rm -rf results/DOCKER_image/*tar
+
+
+# execute time : 2024-04-15 15:56:13 : git add --all
+git add .
+
+
+# execute time : 2024-04-15 15:57:04 : commit
+git commit -m "first git"
+
+
+# execute time : 2024-04-15 15:58:20 : 
+git push nf_jumpup main 
+
+
+# execute time : 2024-04-15 16:28:55 : 
+git remote add origin  https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-15 16:29:01 : 
+git remote --verbose
+
+
+# execute time : 2024-04-15 16:29:45 : 
+git add lower_file_size_docker_images_save.nf 
+
+
+# execute time : 2024-04-15 16:32:23 : 
+ git config --global init.defaultBranch main 
+
+
+# execute time : 2024-04-15 16:32:26 : 
+git init
+
+
+# execute time : 2024-04-15 16:33:07 : 
+git remote add origin https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-15 16:33:18 : 
+git add lower_file_size_docker_images_save.nf
+
+
+# execute time : 2024-04-15 16:33:38 : 
+git commit -m "add lower_file_size_docker_images_save.nf "
+
+
+# execute time : 2024-04-15 16:34:34 : 
+git push --set-upstream origin master
+
+
+# execute time : 2024-04-15 17:00:49 : 
+git remote add origin https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-15 17:01:22 : 
+git add . 
+
+
+# execute time : 2024-04-16 09:13:50 : 
+git config --global init.defaultBranch main 
+
+
+# execute time : 2024-04-16 09:14:12 : 
+ssh -T git@github.com 
+
+
+# execute time : 2024-04-16 09:14:31 : 
+git remote add origin https://github.com/ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-16 09:14:39 : 
+git remote --verbose
+
+
+# execute time : 2024-04-16 09:14:45 : 
+git add lower_file_size_docker_images_save.nf
+
+
+# execute time : 2024-04-16 09:14:48 : 
+git commit -m "add lower_file_size_docker_images_save.nf "
+
+
+# execute time : 2024-04-16 09:19:56 : 
+git remote remove origin
+
+
+# execute time : 2024-04-16 09:20:13 : 
+git remote add origin git@github.com:ParkMinYoung/nextflow_jumpup.git
+
+
+# execute time : 2024-04-16 09:20:54 : 
+git push -u origin master
+
+
+# execute time : 2024-04-16 09:21:19 : 
+# solved : https://synuns.tistory.com/2
+
+

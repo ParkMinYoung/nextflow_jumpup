@@ -1,0 +1,147 @@
+Apr-12 16:57:14.267 [main] DEBUG nextflow.cli.Launcher - $> nextflow run lower_file_size_docker_images_save.nf -resume --size 200 --tag_name AAA --outdir results --docker_list custom_docker_list
+Apr-12 16:57:14.438 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.0
+Apr-12 16:57:14.456 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/adminrig/.nextflow/plugins; core-plugins: nf-amazon@1.16.1,nf-azure@1.0.0,nf-codecommit@0.1.3,nf-console@1.0.5,nf-ga4gh@1.0.4,nf-google@1.7.2,nf-tower@1.5.11,nf-wave@0.8.1
+Apr-12 16:57:14.467 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-12 16:57:14.468 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-12 16:57:14.470 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-12 16:57:14.480 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-12 16:57:14.495 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /home/adminrig/.nextflow/config
+Apr-12 16:57:14.496 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/adminrig/.nextflow/config
+Apr-12 16:57:14.519 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-12 16:57:15.154 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-12 16:57:15.170 [main] INFO  nextflow.cli.CmdRun - Launching `lower_file_size_docker_images_save.nf` [elated_joliot] DSL2 - revision: f6f3876cdc
+Apr-12 16:57:15.171 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-12 16:57:15.171 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-12 16:57:15.179 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/adminrig/.nextflow/secrets/store.json
+Apr-12 16:57:15.183 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7b948f3e] - activable => nextflow.secret.LocalSecretsProvider@7b948f3e
+Apr-12 16:57:15.237 [main] DEBUG nextflow.Session - Session UUID: 246aaa7a-b1e0-494d-bb91-af5e59a654e6
+Apr-12 16:57:15.237 [main] DEBUG nextflow.Session - Run name: elated_joliot
+Apr-12 16:57:15.238 [main] DEBUG nextflow.Session - Executor pool size: 64
+Apr-12 16:57:15.249 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-12 16:57:15.274 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.0 build 5857
+  Created: 01-04-2023 21:09 UTC (02-04-2023 06:09 KDT)
+  System: Linux 3.10.0-693.5.2.el7.x86_64
+  Runtime: Groovy 3.0.16 on Java HotSpot(TM) 64-Bit Server VM 18.0.2+9-61
+  Encoding: UTF-8 (UTF-8)
+  Process: 145625@dlcfe-dnalink.com [211.174.205.41]
+  CPUs: 64 - Mem: 503.3 GB (25.3 GB) - Swap: 4 GB (195.9 MB)
+Apr-12 16:57:15.328 [main] DEBUG nextflow.Session - Work-dir: /home/adminrig/workspace.min/nextflow/training/nf-training/work [nfs]
+Apr-12 16:57:15.329 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/adminrig/workspace.min/nextflow/training/nf-training/bin
+Apr-12 16:57:15.342 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-12 16:57:15.355 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-12 16:57:15.375 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-12 16:57:15.386 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 65; maxThreads: 1000
+Apr-12 16:57:15.488 [main] DEBUG nextflow.Session - Session start
+Apr-12 16:57:15.924 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-12 16:57:15.940 [main] INFO  nextflow.Nextflow - 
+Minyoung code
+=======================================
+
+desc          : docker image save
+
+file size     : 200
+
+
+Apr-12 16:57:16.025 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-12 16:57:16.025 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-12 16:57:16.032 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-12 16:57:16.040 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=503.3 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
+Apr-12 16:57:16.175 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-12 16:57:16.175 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-12 16:57:16.178 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: DOCKER_LIST, DOCKER_SAVE
+Apr-12 16:57:16.179 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Apr-12 16:57:16.179 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DOCKER_LIST
+Apr-12 16:57:16.180 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DOCKER_SAVE
+Apr-12 16:57:16.180 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-12 16:57:16.180 [main] DEBUG nextflow.Session - Session await
+Apr-12 16:57:16.307 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:16.309 [Task submitter] INFO  nextflow.Session - [5e/150d7f] Submitted process > DOCKER_LIST (T: AAA, S: 200)
+Apr-12 16:57:16.870 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DOCKER_LIST (T: AAA, S: 200); status: COMPLETED; exit: 0; error: -; workDir: /home/adminrig/workspace.min/nextflow/training/nf-training/work/5e/150d7f1de43ebf0e8ddbe060e8a983]
+Apr-12 16:57:16.897 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-12 16:57:16.926 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:16.926 [Task submitter] INFO  nextflow.Session - [68/937fa7] Submitted process > DOCKER_SAVE (28)
+Apr-12 16:57:17.003 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [a8/d67830] Cached process > DOCKER_SAVE (15)
+Apr-12 16:57:17.003 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [8d/6743e7] Cached process > DOCKER_SAVE (18)
+Apr-12 16:57:17.003 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [f1/ad147e] Cached process > DOCKER_SAVE (11)
+Apr-12 16:57:17.009 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.010 [Task submitter] INFO  nextflow.Session - [d8/bd023d] Submitted process > DOCKER_SAVE (29)
+Apr-12 16:57:17.016 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.016 [Task submitter] INFO  nextflow.Session - [a8/be6d0f] Submitted process > DOCKER_SAVE (25)
+Apr-12 16:57:17.022 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.023 [Task submitter] INFO  nextflow.Session - [68/73e208] Submitted process > DOCKER_SAVE (9)
+Apr-12 16:57:17.028 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.028 [Task submitter] INFO  nextflow.Session - [5a/20e2bb] Submitted process > DOCKER_SAVE (26)
+Apr-12 16:57:17.035 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.035 [Task submitter] INFO  nextflow.Session - [e1/a5ca08] Submitted process > DOCKER_SAVE (27)
+Apr-12 16:57:17.041 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.041 [Task submitter] INFO  nextflow.Session - [bf/38d5e0] Submitted process > DOCKER_SAVE (5)
+Apr-12 16:57:17.047 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.048 [Task submitter] INFO  nextflow.Session - [9b/0c7903] Submitted process > DOCKER_SAVE (22)
+Apr-12 16:57:17.064 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.064 [Task submitter] INFO  nextflow.Session - [eb/2238da] Submitted process > DOCKER_SAVE (7)
+Apr-12 16:57:17.268 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.268 [Task submitter] INFO  nextflow.Session - [05/f7177f] Submitted process > DOCKER_SAVE (12)
+Apr-12 16:57:17.276 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.277 [Task submitter] INFO  nextflow.Session - [35/a4998d] Submitted process > DOCKER_SAVE (1)
+Apr-12 16:57:17.284 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.284 [Task submitter] INFO  nextflow.Session - [42/80852e] Submitted process > DOCKER_SAVE (21)
+Apr-12 16:57:17.292 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.293 [Task submitter] INFO  nextflow.Session - [bb/bf655d] Submitted process > DOCKER_SAVE (3)
+Apr-12 16:57:17.317 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.318 [Task submitter] INFO  nextflow.Session - [79/bfb046] Submitted process > DOCKER_SAVE (19)
+Apr-12 16:57:17.329 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.329 [Task submitter] INFO  nextflow.Session - [29/b95475] Submitted process > DOCKER_SAVE (13)
+Apr-12 16:57:17.337 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.337 [Task submitter] INFO  nextflow.Session - [9f/2aa813] Submitted process > DOCKER_SAVE (24)
+Apr-12 16:57:17.343 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.343 [Task submitter] INFO  nextflow.Session - [e2/fd64a8] Submitted process > DOCKER_SAVE (17)
+Apr-12 16:57:17.348 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.349 [Task submitter] INFO  nextflow.Session - [bd/4e68c1] Submitted process > DOCKER_SAVE (4)
+Apr-12 16:57:17.355 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.355 [Task submitter] INFO  nextflow.Session - [37/02f05d] Submitted process > DOCKER_SAVE (16)
+Apr-12 16:57:17.361 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.362 [Task submitter] INFO  nextflow.Session - [8a/d3b1c2] Submitted process > DOCKER_SAVE (2)
+Apr-12 16:57:17.367 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: DOCKER_SAVE (28); status: COMPLETED; exit: 1; error: -; workDir: /home/adminrig/workspace.min/nextflow/training/nf-training/work/68/937fa7caab87dc793029e66a375ad7]
+Apr-12 16:57:17.369 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.369 [Task submitter] INFO  nextflow.Session - [37/e6a966] Submitted process > DOCKER_SAVE (23)
+Apr-12 16:57:17.373 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=DOCKER_SAVE (28); work-dir=/home/adminrig/workspace.min/nextflow/training/nf-training/work/68/937fa7caab87dc793029e66a375ad7
+  error [nextflow.exception.ProcessFailedException]: Process `DOCKER_SAVE (28)` terminated with an error exit status (1)
+Apr-12 16:57:17.376 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.376 [Task submitter] INFO  nextflow.Session - [cd/14d1a2] Submitted process > DOCKER_SAVE (20)
+Apr-12 16:57:17.382 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.382 [Task submitter] INFO  nextflow.Session - [c6/3ade9f] Submitted process > DOCKER_SAVE (14)
+Apr-12 16:57:17.388 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.389 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'DOCKER_SAVE (28)'
+
+Caused by:
+  Process `DOCKER_SAVE (28)` terminated with an error exit status (1)
+
+Command executed:
+
+  docker save -o subicura_whoami_.tar subicura/whoami:
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Error response from daemon: invalid reference format
+
+Work dir:
+  /home/adminrig/workspace.min/nextflow/training/nf-training/work/68/937fa7caab87dc793029e66a375ad7
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Apr-12 16:57:17.389 [Task submitter] INFO  nextflow.Session - [a5/6a939a] Submitted process > DOCKER_SAVE (6)
+Apr-12 16:57:17.392 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `DOCKER_SAVE (28)` terminated with an error exit status (1)
+Apr-12 16:57:17.398 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-12 16:57:17.398 [Task submitter] INFO  nextflow.Session - [41/d1b705] Submitted process > DOCKER_SAVE (10)
+Apr-12 16:57:17.405 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-12 16:57:17.406 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-12 16:57:17.412 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (24)
+Apr-12 16:57:17.519 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=3; pendingCount=1; submittedCount=9; runningCount=-9; retriesCount=0; abortedCount=24; succeedDuration=519ms; failedDuration=400ms; cachedDuration=14.1s;loadCpus=-9; loadMemory=0; peakRunning=15; peakCpus=15; peakMemory=0; ]
+Apr-12 16:57:17.603 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-12 16:57:17.655 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

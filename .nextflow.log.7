@@ -1,0 +1,63 @@
+Apr-12 16:46:46.454 [main] DEBUG nextflow.cli.Launcher - $> nextflow run lower_file_size_docker_images_save.nf -resume --size 1000 --tag_name AAA --outdir results --docker_list custom_docker_list
+Apr-12 16:46:46.642 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.0
+Apr-12 16:46:46.660 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/adminrig/.nextflow/plugins; core-plugins: nf-amazon@1.16.1,nf-azure@1.0.0,nf-codecommit@0.1.3,nf-console@1.0.5,nf-ga4gh@1.0.4,nf-google@1.7.2,nf-tower@1.5.11,nf-wave@0.8.1
+Apr-12 16:46:46.671 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-12 16:46:46.672 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-12 16:46:46.675 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-12 16:46:46.685 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-12 16:46:46.702 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /home/adminrig/.nextflow/config
+Apr-12 16:46:46.703 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/adminrig/.nextflow/config
+Apr-12 16:46:46.728 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-12 16:46:47.344 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-12 16:46:47.360 [main] INFO  nextflow.cli.CmdRun - Launching `lower_file_size_docker_images_save.nf` [spontaneous_bassi] DSL2 - revision: 0c6703422a
+Apr-12 16:46:47.361 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-12 16:46:47.361 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-12 16:46:47.369 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/adminrig/.nextflow/secrets/store.json
+Apr-12 16:46:47.373 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7b948f3e] - activable => nextflow.secret.LocalSecretsProvider@7b948f3e
+Apr-12 16:46:47.426 [main] DEBUG nextflow.Session - Session UUID: 246aaa7a-b1e0-494d-bb91-af5e59a654e6
+Apr-12 16:46:47.426 [main] DEBUG nextflow.Session - Run name: spontaneous_bassi
+Apr-12 16:46:47.427 [main] DEBUG nextflow.Session - Executor pool size: 64
+Apr-12 16:46:47.437 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-12 16:46:47.461 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.0 build 5857
+  Created: 01-04-2023 21:09 UTC (02-04-2023 06:09 KDT)
+  System: Linux 3.10.0-693.5.2.el7.x86_64
+  Runtime: Groovy 3.0.16 on Java HotSpot(TM) 64-Bit Server VM 18.0.2+9-61
+  Encoding: UTF-8 (UTF-8)
+  Process: 101559@dlcfe-dnalink.com [211.174.205.41]
+  CPUs: 64 - Mem: 503.3 GB (43.4 GB) - Swap: 4 GB (194.1 MB)
+Apr-12 16:46:47.517 [main] DEBUG nextflow.Session - Work-dir: /home/adminrig/workspace.min/nextflow/training/nf-training/work [nfs]
+Apr-12 16:46:47.518 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/adminrig/workspace.min/nextflow/training/nf-training/bin
+Apr-12 16:46:47.530 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-12 16:46:47.543 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-12 16:46:47.562 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-12 16:46:47.572 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 65; maxThreads: 1000
+Apr-12 16:46:47.677 [main] DEBUG nextflow.Session - Session start
+Apr-12 16:46:48.065 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-12 16:46:48.081 [main] INFO  nextflow.Nextflow - 
+Minyoung code
+=======================================
+
+desc          : docker image save
+
+file size     : 1000
+
+
+Apr-12 16:46:48.166 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-12 16:46:48.166 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-12 16:46:48.172 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-12 16:46:48.179 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=503.3 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
+Apr-12 16:46:48.311 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: DOCKER_LIST, DOCKER_SAVE
+Apr-12 16:46:48.311 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Apr-12 16:46:48.311 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DOCKER_LIST
+Apr-12 16:46:48.312 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-12 16:46:48.312 [main] DEBUG nextflow.Session - Session await
+Apr-12 16:46:48.457 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [c2/0ab432] Cached process > DOCKER_LIST (T: AAA, S: 1000)
+Apr-12 16:46:48.480 [Actor Thread 7] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-12 16:46:48.484 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-12 16:46:48.487 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-12 16:46:48.489 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Apr-12 16:46:48.493 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=1; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=544ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Apr-12 16:46:48.523 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-12 16:46:48.575 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-12 16:46:48.575 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
